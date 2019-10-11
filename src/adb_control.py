@@ -19,3 +19,6 @@ class AdbControl:
 
     def swipe(self, startX, startY, endX, endY, timeout):
         self.exec(f'shell input swipe {startX} {startY} {endX} {endY} {timeout}')
+    
+    def connect(self, ip_address_port):
+        print (self.exec(f'connect {ip_address_port}'))

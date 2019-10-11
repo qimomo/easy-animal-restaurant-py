@@ -17,6 +17,9 @@ class RestaurantControl:
         self.adb = AdbControl()
         self._get_config()
     
+    def connect(self, ip_address_port):
+        self.adb.connect(ip_address_port)
+
     # 获取参数
     def _get_config(self):
         try:
@@ -54,7 +57,7 @@ class RestaurantControl:
                 print(f'拾取第 {(i * 3) + (j + 1)} 桌扔钱')
 
                 self.adb.tap(x, y)
-                time.sleep(1)
+                time.sleep(0.1)
         return True
 
     # 点击大厅的订单
@@ -67,7 +70,7 @@ class RestaurantControl:
                 print(f'点击第 {(i * 3) + (j + 1)} 桌订单')
 
                 self.adb.tap(x, y)
-                time.sleep(1)
+                time.sleep(0.1)
         return True
     
     # 拾取大厅其他地方的钱
@@ -77,7 +80,7 @@ class RestaurantControl:
             print(f'正在拾取 {item["info"]} 的收入')
 
             self.adb.tap(item['x'], item['y'])
-            time.sleep(0.5)
+            time.sleep(0.1)
         return True
 
     # 拾取厨房其他地方的钱
@@ -87,7 +90,7 @@ class RestaurantControl:
             print(f'正在拾取 {item["info"]} 的收入')
 
             self.adb.tap(item['x'], item['y'])
-            time.sleep(0.5)
+            time.sleep(0.1)
         return True
 
     # 点击 number 次宣传按钮
@@ -95,4 +98,4 @@ class RestaurantControl:
         print(f'\n点击 {number} 次宣传按钮\n')
         for i in range(0, number):
             self.adb.tap(self.config['propaganda']['x'], self.config['propaganda']['y'])
-            time.sleep(0.5)
+            time.sleep(0.01)
