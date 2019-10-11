@@ -1,0 +1,60 @@
+{
+    "leftScreen": {
+        "x": 72,
+        "y": 1183
+    },
+    "rightScreen": {
+        "x": 1033,
+        "y": 1183
+    },
+    "firstSite": {
+        "x": 374, 
+        "y": 881
+    },
+    "siteOffset": {
+        "x": 288, 
+        "y": 398
+    },
+    "firstMoney": {
+        "x": 442, 
+        "y": 1023
+    },
+    "propaganda": {
+        "x": 950, 
+        "y": 2196
+    },
+    "hallMoney": {
+        "dessert": {
+            "x": 99,
+            "y": 956,
+            "info": "前台甜品"
+        },
+        "liqueur": {
+            "x": 397, 
+            "y": 1778,
+            "info": "下方酒桶"
+        },
+        "coffee": {
+            "x": 504, 
+            "y": 2006,
+            "info": "下方咖啡桌"
+        }
+    },
+    "kitchenMoney": {
+        "dessert": {
+            "x": 82,
+            "y": 794,
+            "info": "上方烤炉"
+        },
+        "liqueur": {
+            "x": 944, 
+            "y": 840,
+            "info": "上方柜橱"
+        },
+        "coffee": {
+            "x": 440, 
+            "y": 1778,
+            "info": "下方料理台"
+        }
+    }
+}
