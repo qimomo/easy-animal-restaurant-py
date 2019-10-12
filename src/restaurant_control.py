@@ -98,4 +98,4 @@ class RestaurantControl:
         print(f'\n点击 {number} 次宣传按钮\n')
         for i in range(0, number):
             self.adb.tap(self.config['propaganda']['x'], self.config['propaganda']['y'])
-            time.sleep(0.01)
+            time.sleep(0.005)
